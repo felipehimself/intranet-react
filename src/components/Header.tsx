@@ -1,16 +1,16 @@
+import { useEffect,  useRef } from 'react';
 import styled from 'styled-components';
-import { useEffect, useState } from 'react';
+import styles, { shakeAnimation } from '../styles/styles';
 import { IoSearch, IoNotificationsSharp } from 'react-icons/io5';
 import { IconContext } from 'react-icons';
 
 const Header = () => {
-  const [date, setDate] = useState<string>('');
+  // const [date, setDate] = useState<string>('');
+  const inputRef = useRef() as React.MutableRefObject<HTMLInputElement>;
 
   useEffect(() => {
-    const date = new Date();
-    const t =
-      date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
-    setDate(t);
+    inputRef.current.focus()
+    
   }, []);
 
   return (
@@ -18,8 +18,8 @@ const Header = () => {
       <IconContext.Provider value={{ className: 'icons-class' }}>
         <div className='container'>
           <div className='header-items'>
-            <div className='header-items__input'>
-              <input type='text' placeholder='Pesquisar...' />
+            <div className='header-items__input-container'>
+              <input ref={inputRef} type='text' placeholder='Pesquisar...' />
               <IoSearch />
             </div>
             {/* Será ajustado para tornar dinâmico */}
@@ -27,7 +27,7 @@ const Header = () => {
               Segunda-feira, 28 de março de 2022, 21h27
             </p>
             <div className='header-items__icons'>
-              <IoNotificationsSharp />
+              <IoNotificationsSharp className='notification' />
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ const Header = () => {
 
 const Wrapper = styled.header`
   max-width: 1200rem;
-  margin: 4rem 5rem auto 30rem;
+  margin: 4rem 5rem auto 25rem;
 
   .container {
     width: 100%;
@@ -54,7 +54,7 @@ const Wrapper = styled.header`
       font-size: 1.2rem;
     }
 
-    &__input {
+    &__input-container {
       display: flex;
       align-items: center;
 
@@ -65,6 +65,10 @@ const Wrapper = styled.header`
         border-radius: 5px;
         padding: 1rem 1.5rem;
         box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid transparent;
+        &:focus {
+          border-bottom: 2px solid ${styles.colorSecondaryLight};
+        }
       }
     }
   }
@@ -72,7 +76,12 @@ const Wrapper = styled.header`
   .icons-class {
     font-size: 1.8rem;
     margin-left: -3rem;
-    color: #adb5bd;
+    color: ${styles.colorSecondaryLight};
+  }
+
+  .notification:hover {
+    animation: ${shakeAnimation} 0.3s;
   }
 `;
+
 export default Header;

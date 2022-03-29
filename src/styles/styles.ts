@@ -1,10 +1,20 @@
+import { keyframes } from 'styled-components';
+
 const styles = {
   colorPrimaryDark: '#845EC2',
   colorPrimaryLight: '#D65DB1',
-  colorSecondaryLight: '#FF6F91',
-  colorSecondaryDark: '#FF9671',
-  colorTertiaryLight: '#FFC75F',
-  colorTertiaryDark: '#F9F871'
-}
+  colorSecondaryDark: '#FF6F91',
+  colorSecondaryLight: '#FF9671',
+  colorTertiaryDark: '#FFC75F',
+  colorTertiaryLight: '#F9F871',
+};
 
-export default styles
+const shakeAnimation = keyframes`
+ 0% { transform: translateX(5px) rotate(45deg); }
+
+  100% { transform: translateX(-5px) rotate(-45deg); }
+`;
+
+export { shakeAnimation };
+
+export default styles;

@@ -1,5 +1,6 @@
+
 import styled from 'styled-components';
-import styles from '../styles/styles';
+
 import {
   IoHomeSharp,
   IoNewspaper,
@@ -11,49 +12,50 @@ import {
 } from 'react-icons/io5';
 
 import { IconContext } from 'react-icons';
+
 const Sidebar = () => {
   return (
     <Wrapper>
       <IconContext.Provider value={{ className: 'icons-class' }}>
         <ul>
           <li>
-            <a href=''>
+            <a href='/'>
               <IoHomeSharp />
               <span>Home</span>
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='/'>
               <IoNewspaper />
               <span>Notícias</span>
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='/'>
               <IoDocumentText />
               <span>Documentos</span>
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='/'>
               <IoDocumentAttach />
               <span>Formulários</span>
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='/'>
               <IoPerson />
               <span>Gestão de Pessoas</span>
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='/'>
               <IoSettingsSharp />
               <span>Configurações</span>
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='/'>
               <IoLogOut />
               <span>Sair</span>
             </a>
@@ -69,7 +71,7 @@ const Wrapper = styled.nav`
   height: 100vh;
   width: 22rem;
   background-color: #fff;
-  border-top-right-radius: 10%;
+  border-top-right-radius: 5%;
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
 
   ul {
@@ -105,7 +107,7 @@ const Wrapper = styled.nav`
   }
 
   li span {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   a {
@@ -116,7 +118,7 @@ const Wrapper = styled.nav`
   }
 
   .icons-class {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 `;
 export default Sidebar;
