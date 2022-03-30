@@ -1,6 +1,7 @@
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import styled from 'styled-components';
+import styles from '../styles/styles';
 const CalendarComponent = () => {
   return (
     <Wrapper>
@@ -14,10 +15,10 @@ const Wrapper = styled.div`
 
   .calendar {
     max-width: 23rem;
-    border-radius: 1rem;
+    border-radius: 5px;
     border: none;
     padding: 0.8rem;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: ${styles.boxShadow};
 
   }
 

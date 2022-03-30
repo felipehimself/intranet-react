@@ -7,6 +7,8 @@ const styles = {
   colorSecondaryLight: '#FF9671',
   colorTertiaryDark: '#FFC75F',
   colorTertiaryLight: '#F9F871',
+  boxShadow: '1px 3px 3px rgba(0, 0, 0, 0.1)'
+
 };
 
 const shakeAnimation = keyframes`

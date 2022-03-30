@@ -90,7 +90,7 @@ const Wrapper = styled.header`
         outline: none;
         border-radius: 5px;
         padding: 1rem 1.5rem;
-        box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: ${styles.boxShadow};
         border-bottom: 2px solid transparent;
         transition: all 0.5s ease;
 
@@ -101,9 +101,11 @@ const Wrapper = styled.header`
     }
 
     &__people {
-      justify-self: right;
+      /* justify-self: right; */
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      
       gap: 4rem;
       img {
         width: 4rem;
@@ -126,7 +128,10 @@ const Wrapper = styled.header`
   .icon-search {
     margin-left: -3rem;
   }
-
+  
+  .icon-notification {
+    
+  }
   .icon-notification:hover {
     animation: ${shakeAnimation} 0.3s;
   }
