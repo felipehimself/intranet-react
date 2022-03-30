@@ -60,8 +60,9 @@ const Header = () => {
 };
 
 const Wrapper = styled.header`
-  max-width: 1200rem;
-  margin: 4rem 5rem auto 25rem;
+  max-width: 150rem;
+  /* border: 1px solid red; */
+  margin: 2rem 3rem auto 25rem;
 
   .container {
     width: 100%;
@@ -69,7 +70,7 @@ const Wrapper = styled.header`
 
   .header-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 5rem;
 
@@ -81,6 +82,7 @@ const Wrapper = styled.header`
     &__input-container {
       display: flex;
       align-items: center;
+      grid-column: 1 / 3;
 
       input {
         width: 100%;
@@ -99,18 +101,18 @@ const Wrapper = styled.header`
     }
 
     &__people {
-      justify-self: center;
+      justify-self: right;
       display: flex;
       align-items: center;
       gap: 4rem;
       img {
-        width: 40px;
+        width: 4rem;
         border-radius: 100%;
         border: 3px solid #fff;
       }
 
       img:not(:first-child){
-        margin-left: -10px;
+        margin-left: -1rem;
         
       }
     }

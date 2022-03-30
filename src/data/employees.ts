@@ -11,6 +11,9 @@ const employees = [
   {
     image: 'https://randomuser.me/api/portraits/women/85.jpg',
   },
+  {
+    image: 'https://randomuser.me/api/portraits/women/95.jpg',
+  },
 ];
 
 export default employees;
