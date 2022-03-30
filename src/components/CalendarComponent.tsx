@@ -22,6 +22,10 @@ const Wrapper = styled.div`
 
   }
 
+  .react-calendar__navigation {
+    height: 2.8rem;
+  }
+
   .react-calendar__navigation__label {
     font-size: 1rem;
   }
@@ -29,6 +33,10 @@ const Wrapper = styled.div`
   .react-calendar__month-view__days__day {
     font-size: 1.1rem;
     line-height: 8px;
+  }
+
+  .${styles.boxShadow} {
+    min-width: 2rem;
   }
 `;
 export default CalendarComponent;
