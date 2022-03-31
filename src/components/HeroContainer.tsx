@@ -12,10 +12,11 @@ const HeroContainer = () => {
 
 const Wrapper = styled.main`
   max-width: 150rem;
-  /* border: 1px solid red; */
   margin: 4rem 3rem auto 25rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5rem;
   justify-content: space-between;
 
 `;

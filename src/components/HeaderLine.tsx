@@ -8,8 +8,8 @@ const Wrapper = styled.div`
   height: 2rem;
   background-image: linear-gradient(
     to right,
-    ${styles.colorTertiaryDark},
-    ${styles.colorTertiaryLight}
+    ${styles.colorSecondary},
+    ${styles.colorSecondaryLight}
   );
 `;
 export default HeaderLine;

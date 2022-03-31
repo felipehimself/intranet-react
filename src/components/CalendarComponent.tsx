@@ -12,10 +12,11 @@ const CalendarComponent = () => {
 
 const Wrapper = styled.div`
   justify-self: right;
+  grid-column: 4 / 5;
 
   .calendar {
     max-width: 23rem;
-    border-radius: 5px;
+    border-radius: ${styles.borderRadiusDefault};
     border: none;
     padding: 0.8rem;
     box-shadow: ${styles.boxShadow};

@@ -61,7 +61,6 @@ const Header = () => {
 
 const Wrapper = styled.header`
   max-width: 150rem;
-  /* border: 1px solid red; */
   margin: 2rem 3rem auto 25rem;
 
   .container {
@@ -77,6 +76,7 @@ const Wrapper = styled.header`
     &__date {
       font-size: 1.2rem;
       text-align: center;
+      color: ${styles.textColor};
     }
 
     &__input-container {
@@ -95,7 +95,7 @@ const Wrapper = styled.header`
         transition: all 0.5s ease;
 
         &:focus {
-          border-bottom: 2px solid ${styles.colorSecondaryLight};
+          border-bottom: 2px solid ${styles.colorPrimary};
         }
       }
     }
@@ -105,7 +105,7 @@ const Wrapper = styled.header`
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
+
       gap: 4rem;
       img {
         width: 4rem;
@@ -113,24 +113,22 @@ const Wrapper = styled.header`
         border: 3px solid #fff;
       }
 
-      img:not(:first-child){
+      img:not(:first-child) {
         margin-left: -1rem;
-        
       }
     }
   }
 
   .icons-class {
     font-size: 1.8rem;
-    color: ${styles.colorSecondaryLight};
+    color: ${styles.colorPrimary};
   }
 
   .icon-search {
     margin-left: -3rem;
   }
-  
+
   .icon-notification {
-    
   }
   .icon-notification:hover {
     animation: ${shakeAnimation} 0.3s;

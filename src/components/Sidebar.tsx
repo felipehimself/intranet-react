@@ -82,8 +82,8 @@ const Wrapper = styled.nav`
   }
 
   ul li > * {
-    color: #004b92;
-    transition: all 0.5s ease;
+    color: #1C6873;
+    transition: all 0.5s ;
   }
 
   ul li:hover > * {
@@ -94,12 +94,13 @@ const Wrapper = styled.nav`
     width: 100%;
     padding: 0.8rem 0.8rem;
     border-radius: 0.5rem;
+    cursor: pointer;
   }
 
   li:hover {
-    background-color: #034079;
+    background-color: #1c6773d1;
     color: #fff;
-    transition: all 0.5s ease;
+    transition: all 0.5s ;
   }
 
   li:not(:last-child) {
