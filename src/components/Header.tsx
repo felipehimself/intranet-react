@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <Wrapper>
       <IconContext.Provider value={{ className: 'icons-class' }}>
-        <div className='container'>
+        <div className='header-container'>
           <div className='header-items'>
             <div className='header-items__input-container'>
               <input ref={inputRef} type='text' placeholder='Pesquisar...' />
@@ -63,7 +63,7 @@ const Wrapper = styled.header`
   max-width: 150rem;
   margin: 2rem 3rem auto 25rem;
 
-  .container {
+  .header-container {
     width: 100%;
   }
 
@@ -88,7 +88,7 @@ const Wrapper = styled.header`
         width: 100%;
         border: none;
         outline: none;
-        border-radius: 5px;
+        border-radius: 0.5rem;
         padding: 1rem 1.5rem;
         box-shadow: ${styles.boxShadow};
         border-bottom: 2px solid transparent;
@@ -104,9 +104,9 @@ const Wrapper = styled.header`
       /* justify-self: right; */
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
 
-      gap: 4rem;
+      /* gap: 4rem; */
       img {
         width: 4rem;
         border-radius: 100%;
@@ -129,9 +129,11 @@ const Wrapper = styled.header`
   }
 
   .icon-notification {
-  }
-  .icon-notification:hover {
-    animation: ${shakeAnimation} 0.3s;
+    margin-right: 0.5rem;
+
+    &:hover {
+      animation: ${shakeAnimation} 0.3s;
+    }
   }
 `;
 

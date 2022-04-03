@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-
+import styles from '../styles/styles';
 import {
   IoHomeSharp,
   IoNewspaper,
@@ -82,7 +82,7 @@ const Wrapper = styled.nav`
   }
 
   ul li > * {
-    color: #1C6873;
+    color: ${styles.greenColor};
     transition: all 0.5s ;
   }
 
@@ -98,7 +98,7 @@ const Wrapper = styled.nav`
   }
 
   li:hover {
-    background-color: #1c6773d1;
+    background-color: ${styles.greenColorHover};
     color: #fff;
     transition: all 0.5s ;
   }

@@ -38,17 +38,17 @@ const Wrapper = styled.div`
     &__welcome {
       font-size: 2.5rem;
       font-weight: bold;
-      color: #1c6873;
+      color: ${styles.greenColor};
     }
 
     &__user {
       font-size: 2.5rem;
-      color: #1c6873;
+      color: ${styles.greenColor};
     }
 
     &__msg {
       font-size: 1.5rem;
-      margin-top: 10px;
+      margin-top: 1rem;
     }
   }
 

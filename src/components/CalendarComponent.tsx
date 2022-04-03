@@ -33,7 +33,7 @@ const Wrapper = styled.div`
 
   .react-calendar__month-view__days__day {
     font-size: 1.1rem;
-    line-height: 8px;
+    line-height: 0.8rem;
   }
 
   .${styles.boxShadow} {

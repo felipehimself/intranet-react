@@ -8,20 +8,5 @@
 
 html {
   font-size: 62.5%;
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
-
-
-}
-
-body {
-  background: #f5f7fb;
-}
-
-
-input, button, select {
-  font-family: inherit;
-}
-
-p {
-  color: #84888b;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
