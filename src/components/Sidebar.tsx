@@ -68,17 +68,18 @@ const Sidebar = () => {
 
 const Wrapper = styled.nav`
   position: fixed;
+  top: 0;
   height: 100vh;
   width: 22rem;
   background-color: #fff;
-  border-top-right-radius: 5%;
+  /* border-top-right-radius: 5%; */
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
 
   ul {
     list-style: none;
     width: 80%;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   ul li > * {

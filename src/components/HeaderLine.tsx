@@ -5,7 +5,11 @@ const HeaderLine = () => {
 };
 
 const Wrapper = styled.div`
+  position: fixed;
+  top: 0;
   height: 2rem;
+  width: 100%;
+  z-index: 100;
   background-image: linear-gradient(
     to right,
     ${styles.colorSecondary},

@@ -3,7 +3,8 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import HeroContainer from './components/HeroContainer';
 import GlobalStyle from './components/GlobalStyle';
-import UserContainer from './components/UserContainer';
+import GeneralContainer from './components/GeneralContainer';
+
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
       <Sidebar />
       <Header />
       <HeroContainer />
-      <UserContainer/>
+      <GeneralContainer />
     </>
   );
 }

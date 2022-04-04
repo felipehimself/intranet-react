@@ -61,7 +61,7 @@ const Header = () => {
 
 const Wrapper = styled.header`
   max-width: 150rem;
-  margin: 2rem 3rem auto 25rem;
+  margin: 4rem 3rem auto 25rem;
 
   .header-container {
     width: 100%;

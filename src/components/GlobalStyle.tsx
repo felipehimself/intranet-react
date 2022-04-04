@@ -2,9 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
-  .container {
+  .global-container {
   max-width: 150rem;
-  margin: 4rem 3rem auto 25rem;
+  margin: 2rem 3rem auto 25rem;
   }
 
   
@@ -17,9 +17,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: inherit;
   }
 
-  p {
+  /* p {
     color: #84888b;
-  }
+  } */
 
 
 `;

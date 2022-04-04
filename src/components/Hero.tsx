@@ -36,13 +36,13 @@ const Wrapper = styled.div`
     align-self: center;
     margin-top: -2.5rem;
     &__welcome {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-weight: bold;
       color: ${styles.greenColor};
     }
 
     &__user {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       color: ${styles.greenColor};
     }
 
