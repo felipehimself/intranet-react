@@ -36,12 +36,7 @@ const Wrapper = styled.article`
   padding: 1rem 3rem;
   position: relative;
 
-  .title {
-    color: ${styles.greenColor};
-    margin-top: 1.5rem;
-  }
-
-  .noticias-container {
+   .noticias-container {
     margin-top: 1.3rem;
 
     &__noticia {

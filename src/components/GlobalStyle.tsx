@@ -1,3 +1,4 @@
+import styles from '../styles/styles';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -17,9 +18,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: inherit;
   }
 
-  /* p {
-    color: #84888b;
-  } */
+  .title {
+    color: ${styles.greenColor};
+    margin-top: 1.5rem;
+  }
 
 
 `;

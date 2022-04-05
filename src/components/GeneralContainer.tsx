@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import Noticias from './Noticias';
-
+import Reuniões from './Reuniões';
 const GeneralContainer = () => {
   return (
     <Wrapper className='global-container'>
       <Noticias />
+      <Reuniões/>
     </Wrapper>
   );
 };
